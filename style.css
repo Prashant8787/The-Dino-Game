@@ -1,0 +1,74 @@
+body{
+    overflow: hidden;
+}
+.bkg{
+    background-image: url('bkg.jpg');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: darkgrey;
+}
+.mario{
+    background-image: url('mario.png');
+    height: 25%;
+    width: 10%;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left:10% ;
+   
+}
+.dino{
+    background-image: url('dino.png');
+    bottom: 0;
+    left: 50%;
+    height: 170px;
+    width: 190px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+   
+
+}
+
+.animatemario{
+    animation: marios 1s linear;
+}
+.animatedino{
+    animation: dinos 9s infinite; 
+}
+@keyframes dinos{
+    0% {left: 100%;}
+    100% {left: -15%;}
+}
+
+@keyframes marios{
+    0% {bottom: 0;}
+    50% {bottom: 35%;}
+    100%{bottom:0%;}
+}
+.gameover{
+    border: 10px solid white;
+    text-align: center;
+    height: 100px;
+    width:40% ;
+    font-size: 100px;
+    color: black;
+    position: absolute;
+    left: 30%;
+    top: 25%;
+}
+#score{
+    color: black;
+    font-size: 20px;
+    background-color: white;
+    width: 40;
+    position: absolute;
+    
+    left: 10;
+    
+}
